@@ -20136,6 +20136,28 @@
 											"title": "Livestream VOD – October 9, 2021 @ 07:18 – First Linux Stream",
 											"text": "<p>chat on Twitch</p>",
 											"type": "blogPost",
+											"channel": {
+												"id": "63fe42c309e691e4e36de93d",
+												"creator": "59f94c0bdd241b70349eb72b",
+												"title": "Linus Tech Tips",
+												"urlname": "main",
+												"about": "# We're LinusTechTips\nWe make videos and stuff, cool eh?",
+												"order": 0,
+												"cover": null,
+												"card": null,
+												"icon": {
+													"width": 600,
+													"height": 600,
+													"path": "https://pbs.floatplane.com/creator_icons/59f94c0bdd241b70349eb72b/770551996990709_1551249357205.jpeg",
+													"childImages": [
+														{
+															"width": 250,
+															"height": 250,
+															"path": "https://pbs.floatplane.com/creator_icons/59f94c0bdd241b70349eb72b/770551996990709_1551249357205_250x250.jpeg"
+														}
+													]
+												}
+											},
 											"attachmentOrder": [
 												"TViGzkuIic"
 											],

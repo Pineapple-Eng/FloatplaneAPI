@@ -60,6 +60,9 @@ docs-swaggerui: docs-skeleton validate-trimmed
 docs-trimmed: docs-oag-html2 docs-oag-dynamic-html docs-redoc docs-rapidoc docs-reslate docs-postman docs-swaggerui
 	@echo "docs-trimmed complete!"
 
+docs-trimmed-no-reslate: docs-oag-html2 docs-oag-dynamic-html docs-redoc docs-rapidoc docs-postman docs-swaggerui
+	@echo "docs-trimmed-no-reslate complete!"
+
 # Section: Full docs
 
 docs-oag-html2-full: docs-skeleton
@@ -88,6 +91,9 @@ docs-swaggerui-full: docs-skeleton
 docs-full: validate docs-oag-html2-full docs-oag-dynamic-html-full docs-redoc-full docs-rapidoc-full docs-reslate-full docs-postman-full docs-swaggerui-full
 	@echo "docs-full complete!"
 
+docs-full-no-reslate: validate docs-oag-html2-full docs-oag-dynamic-html-full docs-redoc-full docs-rapidoc-full docs-postman-full docs-swaggerui-full
+	@echo "docs-full-no-reslate complete!"
+
 # Section: Async docs
 
 docs-async-frontend: docs-skeleton
@@ -106,3 +112,9 @@ docs-schemas: trim docs-skeleton
 	cp ./src/async-schemas.json Docs/
 docs-all: clean validate docs-skeleton docs-trimmed docs-full docs-async docs-schemas yaml
 	@echo "docs-all complete!"
+
+docs-all-no-reslate: clean validate docs-skeleton docs-trimmed-no-reslate docs-full-no-reslate docs-async docs-schemas yaml
+	@echo "docs-all complete!"
+
+docs-all-no-reslate-no-async: clean validate docs-skeleton docs-trimmed-no-reslate docs-full-no-reslate docs-schemas yaml
+	@echo "docs-all-no-reslate-no-async complete!"
